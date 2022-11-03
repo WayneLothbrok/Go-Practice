@@ -9,14 +9,11 @@ import (
 type H map[string]interface{}
 
 type Context struct {
-	// origin objects
-	Writer http.ResponseWriter
-	Req    *http.Request
-	// request info
-	Path   string
-	Method string
-	Params map[string]string
-	// response info
+	Writer     http.ResponseWriter
+	Req        *http.Request
+	Path       string
+	Method     string
+	Params     map[string]string
 	StatusCode int
 }
 
